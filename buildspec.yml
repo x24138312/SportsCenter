@@ -19,12 +19,12 @@ phases:
   build:
     commands:
       - echo "Build Stage"
-	    - echo "PyLint Started"
+      - echo "PyLint Started"
       - pylint sportsactive/**/*.py || true
       - echo "pre build stage completed - PyLint Completed!!"
-	    - echo "Django Test Cases Started"
-	    - python manage.py test
-	    - echo "Django Test Cases Completed!!"
+      - echo "Django Test Cases Started"
+      - python manage.py test
+      - echo "Django Test Cases Completed!!"
       - echo "Build stage completed!"
 
 artifacts:
