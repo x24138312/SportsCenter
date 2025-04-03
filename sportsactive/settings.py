@@ -27,9 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -71,14 +68,6 @@ TEMPLATES = [
         },
     },
 ]      
-
-
-      
-
-        
-
-         
-         
 
 WSGI_APPLICATION = "sportsactive.wsgi.application"
 
