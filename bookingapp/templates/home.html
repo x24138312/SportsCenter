@@ -1,0 +1,56 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block nav %}
+<ul>
+    <li class="active"><a href="{% url 'home_page' %}">Home</a></li>
+    <li><a href="{% url 'activity_list' %}">Activities</a></li>
+    {% if user.is_authenticated %}
+    <li><a href="{% url 'my_booking_view' %}">My Bookings</a></li>
+    {% endif %}
+
+</ul>      
+{% endblock %}
+
+{% block content %}
+    <section class="hero-section set-bg" data-setbg="{% static 'img/img1.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="hero-text">
+                        <span></span>
+                        <h1>Sportify</h1>
+                        <p>Sports Activity Center</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Begin -->
+    <section class="about-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-pic">
+                     <img src="{% static 'img/img2.jpg' %}" alt="">
+                        <a href="https://www.youtube.com/watch?v=SlPhMPnQ58k" class="play-btn video-popup">
+                           
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        
+                        <p style="color: white;" class="first-para">Welcome to Sportify, your ultimate destination for booking a wide range of sports activities! Whether you're looking to join a thrilling game of soccer, perfect your swing on the tennis court, or dive into the refreshing waters of a swimming pool, Sportify makes it easy to find and book your favorite sports activities in just a few clicks. Our user-friendly platform connects you with top-notch facilities and experienced coaches, ensuring you have the best experience every time. Get ready to stay active, meet new friends, and enjoy the sports you love with Sportify!</p>
+                       
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+
+{% endblock %}
