@@ -1,5 +1,5 @@
 """
-ASGI config for sportsactive project.
+ASGI config for booking_management project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
