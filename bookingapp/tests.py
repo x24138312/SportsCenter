@@ -8,7 +8,7 @@ class MyViewTestCase(TestCase):
         self.assertEqual(response.status_code, 200)
 
 class MyViewTestCase(TestCase):
-    def test_home_view(self):
+    def test_about_view(self):
         """Test if  page returns 200 status"""
         response = self.client.get(reverse('about_us'))
         self.assertEqual(response.status_code, 200)
