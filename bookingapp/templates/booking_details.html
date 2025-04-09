@@ -4,7 +4,7 @@
 {% block nav %}
 <ul>
     <li class=""><a href="{% url 'home_page' %}">Home</a></li>
-    <li class="active"><a href="{% url 'activity_list' %}">activity</a></li>
+    <li class="active"><a href="{% url 'activity_list' %}">activities</a></li>
     {% if user.is_authenticated %}
     <li><a href="{% url 'my_booking_view' %}">My Bookings</a></li>
     {% endif %}
