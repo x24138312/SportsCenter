@@ -4,9 +4,9 @@
 {% block nav %}
 <ul>
     <li class=""><a href="{% url 'home_page' %}">Home</a></li>
-    <li class="active"><a href="{% url 'activity_list' %}">Activities</a></li>
+    <li class="active"><a href="{% url 'activity_list' %}">activity</a></li>
     {% if user.is_authenticated %}
-    <li><a href="{% url 'my_booking_view' %}">My Booking</a></li>
+    <li><a href="{% url 'my_booking_view' %}">My Bookings</a></li>
     {% endif %}
 </ul>      
 {% endblock %}
